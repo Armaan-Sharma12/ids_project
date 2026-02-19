@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-primary: #0a0e27;
+    --bg-secondary: #141b2d;
+    --bg-tertiary: #1f2937;
+    --text-primary: #ffffff;
+    --text-secondary: #a0aec0;
+    --accent-blue: #3b82f6;
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    --accent-yellow: #f59e0b;
+    --border-color: #2d3748;
+}
+
+.stApp {
+    background-color: var(--bg-primary);
+}
+
+.main {
+    background-color: var(--bg-primary);
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, label {
+    color: var(--text-primary) !important;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, var(--accent-blue), #2563eb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
+}
+
+.metric-card {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    padding: 80px 40px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 32px;
+    border: 1px solid var(--border-color);
+    height: 100%;
+}
+
+.navbar {
+    background: var(--bg-secondary);
+    padding: 16px 32px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+    padding: 24px;
+}
+
+.sidebar-item {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar-item:hover {
+    background: var(--bg-tertiary);
+}
+
+.sidebar-item.active {
+    background: var(--accent-blue);
+}
+
+.data-table {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+}
+
+.stDataFrame {
+    background: var(--bg-secondary);
+}
+
+.stTextInput > div > div > input {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.stSelectbox > div > div > div {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.success-box {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--accent-green);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--accent-green);
+}
+
+.error-box {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--accent-red);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--accent-red);
+}
+
+.warning-box {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid var(--accent-yellow);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--accent-yellow);
+}
+
+.chart-container {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid var(--border-color);
+}
+
+.stMetric {
+    background: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.stMetric label {
+    color: var(--text-secondary) !important;
+}
+
+.stMetric [data-testid="stMetricValue"] {
+    color: var(--text-primary) !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: var(--bg-secondary);
+    border-right: 1px solid var(--border-color);
+}
+
+[data-testid="stSidebar"] > div:first-child {
+    background-color: var(--bg-secondary);
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    padding: 12px 24px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
+    gap: 0.5rem;
+}
